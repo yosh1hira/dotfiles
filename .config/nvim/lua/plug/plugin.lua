@@ -1,6 +1,6 @@
 vim.cmd [[packadd packer.nvim]]
 
-return require('packer').startup(function() {
+return require('packer').startup(function()
 
   -- package manager
   ------------------------------------
@@ -23,8 +23,8 @@ return require('packer').startup(function() {
   -- fuzzy finder
   ------------------------------------
   use {
-    "nvim-telescope/nvim-telescope",
-    requires = { {"nvim-lua/plenary.nvim"} },
+    "nvim-telescope/telescope.nvim",
+    requires = { "nvim-lua/plenary.nvim" },
   }
 
   -- statusline
@@ -68,4 +68,4 @@ return require('packer').startup(function() {
     "kyazdani42/nvim-web-devicons"
   }
 
-}end)
+end)
