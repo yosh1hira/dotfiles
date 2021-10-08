@@ -68,4 +68,9 @@ return require('packer').startup(function()
     "kyazdani42/nvim-web-devicons"
   }
 
+  use {
+    "akinsho/toggleterm.nvim",
+    config = function() require("plug/config/term") end
+  }
+
 end)

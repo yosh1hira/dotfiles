@@ -83,3 +83,4 @@ map("n", "gj", "j", { noremap = true })
 map("n", "gk", "k", { noremap = true })
 
 map("t", "<ESC>", "<C-\\><C-n>", {})
+

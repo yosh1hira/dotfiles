@@ -15,7 +15,7 @@ setopt histignoredups
 setopt histignorespace
 setopt histnostore
 setopt histreduceblanks
-HISTFILE=$XDG_CONFIG_HOME/zsh/zsh_history
+HISTFILE=$XDG_CACHE_HOME/zsh/zsh_history
 HISTSIZE=1000
 
 setopt ignoreeof
