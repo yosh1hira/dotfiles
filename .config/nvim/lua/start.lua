@@ -2,6 +2,8 @@
 
 local g, opt = vim.g, vim.opt
 
+vim.cmd[[ colorscheme gruvbox-material ]]
+
 opt.termguicolors = true
 
 opt.number = true
@@ -79,3 +81,5 @@ map("n", "j", "gj", { noremap = true })
 map("n", "k", "gk", { noremap = true })
 map("n", "gj", "j", { noremap = true })
 map("n", "gk", "k", { noremap = true })
+
+map("t", "<ESC>", "<C-\\><C-n>", {})

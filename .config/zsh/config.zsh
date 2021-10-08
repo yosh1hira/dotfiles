@@ -24,4 +24,3 @@ setopt interactive
 setopt nolistbeep
 setopt promptsubst
 setopt sharehistory
-setopt shinstdin

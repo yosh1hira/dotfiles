@@ -1,8 +1,9 @@
 #!/bin/zsh
 
 export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml
-eval "$(starship init zsh)"
-eval "$(zoxide init zsh)"
+
+eval "$(/usr/local/bin/starship init zsh)"
+eval "$(/usr/local/bin/zoxide init zsh)"
 
 #### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
