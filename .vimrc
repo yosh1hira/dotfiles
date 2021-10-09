@@ -41,6 +41,7 @@ set backspace=indent,eol,start
 set nowritebackup
 set nobackup
 set noswapfile
+set viminfo+=n$HOME/.vim/viminfo.txt
 
 set autoread
 
@@ -60,10 +61,6 @@ set incsearch
 
 set updatetime=250
 
-if has("gui_macvim")
-  let g:macvim_skip_colorscheme = 1
-  let g:no_gvimrc_example = 1
-endif
 
 "------------------------------------------------------------------------------
 let g:netrw_liststyle = 1

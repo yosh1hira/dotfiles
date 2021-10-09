@@ -17,7 +17,8 @@ return require('packer').startup(function()
   -- treesitter
   ------------------------------------
   use {
-    "nvim-treesitter/nvim-treesitter"
+    "nvim-treesitter/nvim-treesitter",
+    config = function() require("plug/config/treesitter") end
   }
 
   -- fuzzy finder
@@ -25,12 +26,15 @@ return require('packer').startup(function()
   use {
     "nvim-telescope/telescope.nvim",
     requires = { "nvim-lua/plenary.nvim" },
+    config = function() require("plug/config/telescope") end
   }
 
   -- statusline
   ------------------------------------
   use {
-    "glepnir/galaxyline.nvim"
+    "glepnir/galaxyline.nvim",
+    requires = { "kyazdani42/nvim-web-devicons", opt = true },
+    config = function() require("plug/config/statusline") end
   }
 
   -- for web development
@@ -38,13 +42,13 @@ return require('packer').startup(function()
   use {
     "mattn/emmet-vim",
     opt = true,
-    ft = {js, ts, html, css}
+    ft = {javascript, typescript, html, css}
   }
 
   use {
     "norcalli/nvim-colorizer.lua",
     opt = true,
-    ft = {js, ts, html, css}
+    ft = {javascript, typescript, html, css},
   }
 
   -- for utility
@@ -62,10 +66,6 @@ return require('packer').startup(function()
     config = function()
       require("surround").setup {mapping_style = "surround"}
     end
-  }
-
-  use {
-    "kyazdani42/nvim-web-devicons"
   }
 
   use {

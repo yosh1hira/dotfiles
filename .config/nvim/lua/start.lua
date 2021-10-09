@@ -36,8 +36,8 @@ g.loaded_perl_provider = 0
 local map = vim.api.nvim_set_keymap
 g.mapleader = ","
 
-map("n", "<F1>", "", { noremap = true })
-map("n", "<F2>", "", { noremap = true })
+--map("n", "<F1>", "", { noremap = true })
+--map("n", "<F2>", "", { noremap = true })
 map("n", "<F3>", "", { noremap = true })
 map("n", "<F4>", "", { noremap = true })
 map("n", "<F5>", "", { noremap = true })
