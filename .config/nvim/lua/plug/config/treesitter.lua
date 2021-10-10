@@ -3,6 +3,34 @@ require("nvim-treesitter.configs").setup {
   highlight = {
     enable = true,
   },
+  textobjects = {
+    select = {
+      enable = true,
+      lockahead = true,
+      keymaps = {
+        ["af"] = "@function.outer",
+        ["if"] = "@function.inner",
+        ["ac"] = "@class.outer",
+        ["ic"] = "@class.inner",
+      },
+    },
+    move = {
+      enable = true,
+      set_jumps = true,
+      goto_next_start = {
+        ["]]"] = "@function.outer",
+      },
+      goto_next_end = {
+        ["]M"] = "@function.outer",
+      },
+      goto_previous_start = {
+        ["[["] = "@function.outer",
+      },
+      goto_previous_end = {
+        ["[M"] = "@function.outer",
+      },
+    },
+  },
   playground = {
     enable = true,
     disable = {},
@@ -20,5 +48,5 @@ require("nvim-treesitter.configs").setup {
       goto_node = '<cr>',
       show_help = '?',
     }
-  }
+  },
 }

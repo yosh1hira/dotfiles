@@ -1,0 +1,13 @@
+vim.cmd [[call submode#enter_with("winsize", "n", "", "<C-w>>", "<C-w>>")]]
+vim.cmd [[call submode#enter_with("winsize", "n", "", "<C-w><", "<C-w><")]]
+vim.cmd [[call submode#enter_with("winsize", "n", "", "<C-w>+", "<C-w>+")]]
+vim.cmd [[call submode#enter_with("winsize", "n", "", "<C-w>-", "<C-w>-")]]
+vim.cmd [[call submode#map("winsize", "n", "", ">", "<C-w>>")]]
+vim.cmd [[call submode#map("winsize", "n", "", "<", "<C-w><")]]
+vim.cmd [[call submode#map("winsize", "n", "", "+", "<C-w>+")]]
+vim.cmd [[call submode#map("winsize", "n", "", "-", "<C-w>-")]]
+
+vim.cmd [[call submode#enter_with("changetab", "n", "", "gt", "gt")]]
+vim.cmd [[call submode#enter_with("changetab", "n", "", "gT", "gT")]]
+vim.cmd [[call submode#map("changetab", "n", "", "t", "gt")]]
+vim.cmd [[call submode#map("changetab", "n", "", "T", "gT")]]
