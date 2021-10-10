@@ -21,6 +21,10 @@ return require('packer').startup(function()
     config = function() require("plug/config/treesitter") end
   }
 
+  use {
+    "nvim-treesitter/playground"
+  }
+
   -- fuzzy finder
   ------------------------------------
   use {
@@ -40,15 +44,14 @@ return require('packer').startup(function()
   -- for web development
   ------------------------------------
   use {
-    "mattn/emmet-vim",
-    opt = true,
-    ft = {javascript, typescript, html, css}
+    "norcalli/nvim-colorizer.lua",
+    config = function() require("plug/config/colorizer") end
   }
 
   use {
-    "norcalli/nvim-colorizer.lua",
+    "mattn/emmet-vim",
     opt = true,
-    ft = {javascript, typescript, html, css},
+    ft = {javascript, typescript, html, css}
   }
 
   -- for utility
