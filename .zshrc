@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml
+export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/config.toml
 
 eval "$(/usr/local/bin/starship init zsh)"
 eval "$(/usr/local/bin/zoxide init zsh)"
