@@ -13,5 +13,6 @@ export PAGER=bat
 path=(
   /usr/local/sbin(N-/)
   $HOME/.cargo/bin(N-/)
+  $HOME/.local/bin(N-/)
   $path
 )

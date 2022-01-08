@@ -49,3 +49,4 @@ function extract() {
 alias -s {gz,tgz,zip,lzh,bz2,tbz,Z,tar,arj,xz}=extract
 alias -s {BMP,bmp,GIF,gif,JPG,jpg,PNG,png,pdf}=eog
 alias -s txt=bat
+alias -s mp4=mpv
