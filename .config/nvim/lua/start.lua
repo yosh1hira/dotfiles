@@ -17,6 +17,7 @@ opt.tabstop = 2
 opt.expandtab = true
 
 opt.scrolloff = 15
+opt.wrap = false
 
 opt.swapfile = false
 

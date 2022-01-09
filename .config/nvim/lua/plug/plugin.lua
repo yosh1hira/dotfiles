@@ -15,14 +15,6 @@ return require('packer').startup({
       "sainnhe/gruvbox-material"
     }
 
-    -- lsp
-    ------------------------------------
-    use {
-      "neovim/nvim-lspconfig",
-      config = function() require("plug/config/lspconfig") end,
-      disable = true
-    }
-
     -- treesitter
     ------------------------------------
     use {
