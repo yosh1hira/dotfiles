@@ -4,6 +4,7 @@ export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/config.toml
 
 eval "$(/usr/local/bin/starship init zsh)"
 eval "$(/usr/local/bin/zoxide init zsh)"
+eval "$(/usr/libexec/path_helper)"
 
 #### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then

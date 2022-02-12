@@ -3,6 +3,9 @@ add_newline = true
 [rust]
 disabled = true
 
+[python]
+disabled = true
+
 [nodejs]
 disabled = true
 
