@@ -62,19 +62,18 @@ return require('packer').startup({
     -- for utility
     ------------------------------------
     use {
+      "folke/which-key.nvim",
+      config = function() require("plug/config/whichkey") end,
+      event = "BufWinEnter"
+    }
+
+    use {
       "kana/vim-submode",
       config = function() require("plug/config/submode") end
     }
 
     use {
       "cohama/lexima.vim"
-    }
-
-    use {
-      "blackCauldron7/surround.nvim",
-      config = function()
-        require("surround").setup {mapping_style = "surround"}
-      end
     }
 
     use {

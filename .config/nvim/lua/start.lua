@@ -11,6 +11,8 @@ opt.relativenumber = true
 opt.numberwidth = 6
 opt.cmdheight = 2
 
+opt.timeoutlen = 250
+
 opt.autoindent = true
 opt.shiftwidth = 2
 opt.tabstop = 2
@@ -35,7 +37,7 @@ g.loaded_perl_provider = 0
 -- MAPPING
 
 local map = vim.api.nvim_set_keymap
-g.mapleader = ","
+g.mapleader = " "
 
 --map("n", "<F1>", "", { noremap = true })
 --map("n", "<F2>", "", { noremap = true })
@@ -76,12 +78,12 @@ map("t", "<F10>", "", { noremap = true })
 map("t", "<F11>", "", { noremap = true })
 map("t", "<F12>", "", { noremap = true })
 
-map("n", "<Enter><Enter>", "<Cmd>w<Cr>", { noremap = true })
-
 map("n", "j", "gj", { noremap = true })
 map("n", "k", "gk", { noremap = true })
 map("n", "gj", "j", { noremap = true })
 map("n", "gk", "k", { noremap = true })
+
+map("n", "<Enter><Enter>", "<Cmd>w<CR>", { noremap = true })
 
 map("t", "<ESC>", "<C-\\><C-n>", {})
 

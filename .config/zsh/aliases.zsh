@@ -50,6 +50,6 @@ alias -s {gz,tgz,zip,lzh,bz2,tbz,Z,tar,arj,xz}=extract
 function image() {
   kitty +kitten icat $1
 }
-alias -s {BMP,bmp,GIF,gif,JPG,jpg,PNG,png,pdf}=image
+alias -s {BMP,bmp,GIF,gif,JPG,jpg,PNG,png}=image
 alias -s txt=bat
 alias -s mp4=mpv
