@@ -1,17 +1,25 @@
+# rust製コマンド
 alias cat='bat'
 alias cheat='tldr'
 alias sed='sd'
 alias ps='procs'
 alias ping='gping'
 alias tree='exa -T --icons'
+alias diff='difft'
+
+alias man='env LANG=ja_JP.UTF-8 man'
+alias eman='env LANG=C man'
 
 alias eog='open -a Preview'
+
+alias py='python3'
+alias pip='pip3'
 
 alias dotfiles='git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 typeset -A abbreviations
 abbreviations=(
-	"bre" "brew update && brew upgrade && brew cleanup"
+	"bre" "brew update && brew upgrade && brew cleanup --prune=all"
 	"la" "exa -bghlSa --icons --git"
 )
 
